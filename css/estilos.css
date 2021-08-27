@@ -67,8 +67,9 @@ br {
 }
 
 .container__formulario--header {
-  width: 100%;
+  width: 80%;
   height: 50px;
+  margin: 0 auto;
   background-color: #6055a5;
   color: #fff;
   border-radius: 4px;
@@ -98,7 +99,7 @@ br {
 }
 
 .container__formulario--form {
-  width: 100%;
+  width: 80%;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,6 +108,7 @@ br {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
   gap: 30px;
   padding: 32px 42px;
   border-radius: 12px;
@@ -280,6 +282,10 @@ br {
   }
   .container__formulario--form {
     padding: 32px 22px;
+    width: 100%;
+  }
+  .container__formulario--header {
+    width: 100%;
   }
 }
 

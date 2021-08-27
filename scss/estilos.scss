@@ -43,8 +43,9 @@ br {
   color: white;
 }
 .container__formulario--header {
-  width: 100%;
+  width: 80%;
   height: 50px;
+  margin: 0 auto;
   background-color: $Blue;
   color: #fff;
   border-radius: 4px;
@@ -62,10 +63,11 @@ br {
   grid-area: container__formulario;
 }
 .container__formulario--form {
-  width: 100%;
+  width: 80%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   gap: 30px;
   padding: 32px 42px;
   border-radius: 12px;
@@ -76,63 +78,61 @@ br {
   position: relative;
 }
 
-
 /* ICONS */
-[class^="container__formulario__"]{
-  position:absolute;
-  right:12px;
-  bottom:15px;
-  font-size:20px;
-  opacity:0;
+[class^="container__formulario__"] {
+  position: absolute;
+  right: 12px;
+  bottom: 15px;
+  font-size: 20px;
+  opacity: 0;
 }
 /* MESSAGE ALERT */
-.container__formulario--txt{
-  position:absolute;
-  font-style:italic;
+.container__formulario--txt {
+  position: absolute;
+  font-style: italic;
   font-size: 13px;
-  bottom:-25px;
-  right:0;
+  bottom: -25px;
+  right: 0;
 }
 
-[class^="container__formulario__"]:focus{
-  border:none;
-  outline:2px solid steelblue;
-  background-color:#fff;
+[class^="container__formulario__"]:focus {
+  border: none;
+  outline: 2px solid steelblue;
+  background-color: #fff;
 }
-.formulario--input--valid [class^="container__formulario__"]{
- color:$Green;
-  opacity:1;
+.formulario--input--valid [class^="container__formulario__"] {
+  color: $Green;
+  opacity: 1;
 }
-.formulario--input--invalid [class^="container__formulario__"]{
-  color:$Red;
-  opacity:1;
-}
-
-.formulario--input--valid .container__formulario--txt{
-  color:$Green;
-  display:block;
-}
-.formulario--input--invalid .container__formulario--txt{
-  color:$Red;
-  display:block;
-}
-.formulario--input--valid .container__formulario--input:focus{
-  border:none;
-  outline:2px solid $Green;
-}
-.formulario--input--invalid .container__formulario--input:focus{
-  border:none;
-  outline:2px solid $Red;
-}
-.container__formulario--txt{
-  display:none;
-}
-@media screen and (max-width:280px){
-  .container__formulario--txt{ 
-  font-size: 10px;
-}
+.formulario--input--invalid [class^="container__formulario__"] {
+  color: $Red;
+  opacity: 1;
 }
 
+.formulario--input--valid .container__formulario--txt {
+  color: $Green;
+  display: block;
+}
+.formulario--input--invalid .container__formulario--txt {
+  color: $Red;
+  display: block;
+}
+.formulario--input--valid .container__formulario--input:focus {
+  border: none;
+  outline: 2px solid $Green;
+}
+.formulario--input--invalid .container__formulario--input:focus {
+  border: none;
+  outline: 2px solid $Red;
+}
+.container__formulario--txt {
+  display: none;
+}
+@media screen and (max-width: 280px) {
+  .container__formulario--txt {
+    font-size: 10px;
+  }
+}
 
 .container__formulario--button {
   width: 100%;
@@ -218,7 +218,11 @@ br {
     font-size: 14px;
   }
   .container__formulario--form {
-    padding: 32px 22px;
+    padding: 32px 22px; 
+    width: 100%;
+  }
+  .container__formulario--header {
+    width: 100%;
   }
 }
 @media screen and (max-width: 374px) {
