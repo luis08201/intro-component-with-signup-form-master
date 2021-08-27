@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="container__description">
+      <h1 class="container__description--heading">Learn to code by watching others</h1>
+      <p class="container__description--paragraph">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="container__formulario">
+      <div class="container__formulario--header">
+        <p class="container__formulario--heading"><strong class="container__formulario--strong">Try it free 7
+            days</strong> then <br> $20/mo. thereafter</p>
+      </div>
+
+      <form action="" class="container__formulario--form" id="formulario">
+        <!-- FIRST NAME-->
+        <div class="container__formulario--inputs" id="container__formulario--nombre">
+          <input type="text" name="nombre" class="container__formulario--input" id="formulario--input__nombre"
+            placeholder="First Name" required>
+
+          <!--CHECK AND ALERT ALERT -->
+          <i class="container__formulario__nombre fas fa-check-circle"></i>
+          <!-- MESSAGE ALERT -->
+          <span class="container__formulario--txt nombre--estado--txt">Lorem ipsum dolor sit amet.</span>
+        </div>
+        <!-- LAST NAME -->
+        <div class="container__formulario--inputs" id="container__formulario--apellido">
+          <input type="text" name="apellido" class="container__formulario--input" id="formulario--input__apellido"
+            placeholder="Last Name" required>
+
+          <!--CHECK AND ALERT ALERT -->
+          <i class="container__formulario__apellido fas fa-check-circle"></i>
+          <!-- MESSAGE ALERT -->
+          <span class="container__formulario--txt apellido--estado--txt"></span>
+        </div>
+        <!-- EMAIL -->
+        <div class="container__formulario--inputs" id="container__formulario--email">
+          <input type="email" name="correo" class="container__formulario--input" id="formulario--input__correo"
+            placeholder="Email Address" required>
+
+          <!--CHECK AND ALERT ALERT -->
+          <i class="container__formulario__correo fas fa-check-circle"></i>
+          <!-- MESSAGE ALERT -->
+          <span class="container__formulario--txt correo--estado--txt"></span>
+        </div>
+        <!-- PASSWORD -->
+        <div class="container__formulario--inputs" id="container__formulario--pwd">
+          <input type="password" name="password" class="container__formulario--input" id="formulario--input__pwd"
+            placeholder="Password" required>
+
+          <!--CHECK AND ALERT ALERT -->
+          <i class="container__formulario__pwd fas fa-check-circle"></i>
+          <!-- MESSAGE ALERT -->
+          <span class="container__formulario--txt pwd--estado--txt"></span>
+        </div>
+
+        <div class="container__formulario--button">
+          <button class="container__formulario--btn">Claim your free trial</button>
+        </div>
+        <div class="container__formulario--content">
+          <p class="container__formulario--paragraph">By clicking the button, you are agreeing to our <strong
+              class="container__formulario--span">Terms and Services</strong></p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="js/validation.js"></script>
+
+  <!--  
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  <script src="https://kit.fontawesome.com/513e65e438.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

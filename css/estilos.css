@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body, .container__formulario--input, .container__formulario--btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff7a7a;
+  padding: 0.1px;
+}
+
+.container {
+  width: 90%;
+  margin: 150px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "container__description container__formulario";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container__description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: container__description;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 48px;
+}
+
+.container__description--heading {
+  font-size: 52px;
+  color: #fff;
+  line-height: 56px;
+}
+
+br {
+  display: none;
+}
+
+.container__description--paragraph {
+  margin-top: 30px;
+  color: white;
+}
+
+.container__formulario--header {
+  width: 100%;
+  height: 50px;
+  background-color: #6055a5;
+  color: #fff;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.295);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.295);
+}
+
+.container__formulario--heading {
+  text-align: center;
+  font-size: 15px;
+}
+
+.container__formulario {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: container__formulario;
+}
+
+.container__formulario--form {
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 32px 42px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.container__formulario--inputs {
+  width: 100%;
+  position: relative;
+}
+
+/* ICONS */
+[class^="container__formulario__"] {
+  position: absolute;
+  right: 12px;
+  bottom: 15px;
+  font-size: 20px;
+  opacity: 0;
+}
+
+/* MESSAGE ALERT */
+.container__formulario--txt {
+  position: absolute;
+  font-style: italic;
+  font-size: 13px;
+  bottom: -25px;
+  right: 0;
+}
+
+[class^="container__formulario__"]:focus {
+  border: none;
+  outline: 2px solid steelblue;
+  background-color: #fff;
+}
+
+.formulario--input--valid [class^="container__formulario__"] {
+  color: #38cc8c;
+  opacity: 1;
+}
+
+.formulario--input--invalid [class^="container__formulario__"] {
+  color: #ff7a7a;
+  opacity: 1;
+}
+
+.formulario--input--valid .container__formulario--txt {
+  color: #38cc8c;
+  display: block;
+}
+
+.formulario--input--invalid .container__formulario--txt {
+  color: #ff7a7a;
+  display: block;
+}
+
+.formulario--input--valid .container__formulario--input:focus {
+  border: none;
+  outline: 2px solid #38cc8c;
+}
+
+.formulario--input--invalid .container__formulario--input:focus {
+  border: none;
+  outline: 2px solid #ff7a7a;
+}
+
+.container__formulario--txt {
+  display: none;
+}
+
+@media screen and (max-width: 280px) {
+  .container__formulario--txt {
+    font-size: 10px;
+  }
+}
+
+.container__formulario--button {
+  width: 100%;
+}
+
+.container__formulario--content {
+  width: 100%;
+}
+
+.container__formulario--input {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.container__formulario--input:focus {
+  font-weight: bold;
+  outline: 1px solid #6055a5;
+}
+
+.container__formulario--btn {
+  width: 100%;
+  height: 48px;
+  background-color: #38cc8c;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 12px 12px rgba(0, 0, 0, 0.11);
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.container__formulario--btn:hover {
+  background-color: #3deb9f;
+  cursor: pointer;
+}
+
+.container__formulario--paragraph {
+  text-align: center;
+  font-size: 12px;
+  color: #b9b6d3;
+}
+
+.container__formulario--span {
+  color: #ff7a7a;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../img/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ff7a7a;
+    background-position: center;
+    padding: 0.1px;
+  }
+  .container {
+        grid-template-areas: "container__description container__description" "container__formulario container__formulario";
+  }
+  .container__description {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: container__description;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+  .container__formulario {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: container__formulario;
+  }
+  br {
+    display: block;
+  }
+  .container__formulario--header {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container__description {
+    padding: 0 18px;
+  }
+  .container__description--heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .container__description--paragraph {
+    font-size: 14px;
+  }
+  .container__formulario--form {
+    padding: 32px 22px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .container__description--heading {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .container__description--paragraph {
+    font-size: 10px;
+  }
+  .container__formulario--form {
+    padding: 32px 22px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
